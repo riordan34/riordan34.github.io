@@ -14,42 +14,24 @@
 <div class="w3-top">
  <div class="w3-bar w3-theme-d2 w3-left-align">
   <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
-  <a href=index.html class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Logo</a>
-  <a href="#quickpicks" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Quick Picks</a>
-  <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-hover-white">NFL</a>
+  <a href=index.html class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i></a>
+  <a href="index.html#quickpicks" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Quick Picks</a>
+  <a href=nflResults.html class="w3-bar-item w3-button w3-hide-small w3-hover-white">NFL</a>
   <a href=nbaResults.html class="w3-bar-item w3-button w3-hide-small w3-hover-white">NBA</a>
-  <a href="#pricing" class="w3-bar-item w3-button w3-hide-small w3-hover-white">NCAAF</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">NCAAB</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-    <button class="w3-button" title="Notifications">History <i class="fa fa-caret-down"></i></button>     
-    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-      <a href="#" class="w3-bar-item w3-button">Link</a>
-    </div>
-  </div>
+  <a href=ncaafResults.html class="w3-bar-item w3-button w3-hide-small w3-hover-white">NCAAF</a>
+  <a href=ncaabResults.html class="w3-bar-item w3-button w3-hide-small w3-hover-white">NCAAB</a>
  </div>
 
-  <!-- Navbar on small screens -->
-  <div id="smallNav" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
-    <a href="#team" class="w3-bar-item w3-button">NFL</a>
-    <a href="#work" class="w3-bar-item w3-button">NBA</a>
-    <a href="#pricing" class="w3-bar-item w3-button">NCAAF</a>
-    <a href="#contact" class="w3-bar-item w3-button">NCAAB</a>
-    <a href="#" class="w3-bar-item w3-button">History</a>
+<!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href=nflResults.html class="w3-bar-item w3-button">NFL</a>
+    <a href=nbaResults.html class="w3-bar-item w3-button">NBA</a>
+    <a href=ncaafResults.html class="w3-bar-item w3-button">NCAAF</a>
+    <a href=ncaabResults.html class="w3-bar-item w3-button">NCAAB</a>
   </div>
-
-    <script>
-  function toggleFunction() {
-    var a = document.getElementById("smallNav");
-    if (a.className.indexOf("show") == -1) {
-        a.className += " show";
-    } else {
-        a.className = a.className.replace(" show", "");
-    }
-    }
-  </script>
 </div>
+
+  
 
 
 
@@ -66,25 +48,25 @@
 <div class="w3-row"><br>
 
 <div class="w3-quarter">
-  <img src="./Media/nfl.png" alt="NFL" style="width:45%" class="w3-hover-opacity">
+  <a href=nflResults.html><img src="./Media/nfl.png" alt="NFL" style="width:45%" class="w3-hover-opacity"></a>
   <h3>NFL</h3>
-  <p>0-0</p>
+  <p>6-5</p>
 </div>
 
 <div class="w3-quarter">
   <a href=nbaResults.html><img src="./Media/nba.png" alt="NBA" style="width:45%" class="w3-hover-opacity"></a>
   <h3>NBA</h3>
-  <p>0-0</p>
+  <p>9-5</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="./Media/ncaaf.png" alt="NCAAF" style="width:45%" class="w3-hover-opacity">
+  <a href=ncaafResults.html><img src="./Media/ncaaf.png" alt="NCAAF" style="width:45%" class="w3-hover-opacity"></a>
   <h3>NCCAF</h3>
   <p>30-26-3</p>
 </div>
 
 <div class="w3-quarter">
-  <img src="./Media/ncaab.png" alt="NCAAB" style="width:45%" class="w3-hover-opacity">
+  <a href=nccabResults.html><img src="./Media/ncaab.png" alt="NCAAB" style="width:45%" class="w3-hover-opacity"></a>
   <h3>NCAAB</h3>
   <p>0-0</p>
 </div>
@@ -171,7 +153,29 @@
   </div>
 </footer>
 
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
 
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
 
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
 </body>
 </html>
