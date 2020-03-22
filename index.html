@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<title>Sarah & Kenneth</title>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113325266-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-113325266-1');
+</script>
+  <link rel="shortcut icon" type="image/x-icon" href="./WebsitePictures/TabLogo.png">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="wedding-styles.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Italianno|Open+Sans+Condensed:300">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,p{font-family: 'Open Sans Condensed', sans-serif}
+body, html {height: 100%}
+p {line-height: 1.7}
+.bgimg, .bgimg2, .bgimg3, .bgimg4, .bgimg5, .bgimg6{min-height: 100%;background-position: center;background-size: cover;background filter: grayscale(100%);filter: brightness(85%);background-attachment: fixed;
+}
+@media (max-width: 1024px) {.bgimg .bgimg2 .bgimg3 .bgimg4 .bgimg5 .bgimg6{background-attachment: initial;}}
+.bgimg {background-image: url("./WebsitePictures/Backgrounds/Sidewalk.JPG");}
+.bgimg2 {background-image: url("./WebsitePictures/Backgrounds/Lakefront.jpg");}
+.bgimg3 {background-image: url("./WebsitePictures/Backgrounds/proposal_pic.png");}
+.bgimg4 {background-image: url("./WebsitePictures/Backgrounds/MellonWalk.jpg");}
+.bgimg5 {background-image: url("./WebsitePictures/Backgrounds/Fountain.png");}
+.bgimg6 {background-image: url("./WebsitePictures/Backgrounds/Accommodations.png");}
+</style>
+<body>
+
+<!-- Header / Home-->
+<header class="display-container bgimg" id="home">
+  <div class="display-middle text-white center">
+    <h1 class="header-title">"I have found the one whom my soul loves"</h1>
+    <h2 class="header-title">-Song of Solomon 4:3</h2>
+    <h2 class="header-date">September 08, 2018</h2>
+  </div>
+</header>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar white padding opacity-menu hover-opacity-menu">
+    <a class="bar-item button hide-medium hide-large right" href="javascript:void(0)" onclick="toggleFunction()" title="Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" style="max-width:20%" class="bar-item button hover-navy">Home</a>
+    <a href="registry.html" class="bar-item button hover-navy hide-small right">Registry</a>
+    <div class="dropdown">
+      <button class="bar-item button hide-small right dropbtn bar">Pictures <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="pictures.html">Pictures</a>
+        <a href="pictures.html#proposal">Proposal</a>
+        <a href="pictures.html#engagement">Engagement</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="bar-item button hide-small right dropbtn bar">Yinz Need Pittsburgh Info? <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="things-to-do.html">Yinz Need Pittsburgh Info?</a>
+        <a href="things-to-do.html#Transportation">Transportation</a>
+        <a href="things-to-do.html#breweries">Breweries</a>
+        <a href="things-to-do.html#activities">Activities</a>
+      </div>
+    </div>
+    <a href="our-story.html" class="bar-item button hover-navy hide-small right">Our Story</a>
+    <div class="dropdown">
+      <button class="bar-item button hide-small right dropbtn bar">Wedding Details <i class="fa fa-caret-down"></i></button>
+      <div class="dropdown-content">
+        <a href="index.html#details">When and Where</a>
+        <a href="index.html#other">Other Events</a>
+        <a href="index.html#Accommodations">Accommodations</a>
+        <a href="party.html">Wedding Party</a>
+        <a href="cookies.html">Cookies</a>
+      </div>
+    </div>
+  </div>
+
+ <!-- Navbar on small screens -->
+  <div id="smallNav" class="bar-block white hide hide-large hide-medium">
+    <a href="index.html#details" class="bar-item button" onclick="toggleFunction()">Wedding Deets</a>
+    <a href="our-story.html" class="bar-item button" onclick="toggleFunction()">Our Story</a>
+    <a href="party.html" class="bar-item button" onclick="toggleFunction()">Wedding Party</a>
+    <a href="cookies.html" class="bar-item button" onclick="toggleFunction()">Cookies</a>
+    <a href="things-to-do.html" class="bar-item button" onclick="toggleFunction()">Yinz Need Pittsburgh Info</a>
+    <a href="pictures.html" class="bar-item button" onclick="toggleFunction()">Pictures</a>
+    <a href="registry.html" class="bar-item button" onclick="toggleFunction()">Registry</a>
+  </div>
+
+  <script>
+  function toggleFunction() {
+    var a = document.getElementById("smallNav");
+    if (a.className.indexOf("show") == -1) {
+        a.className += " show";
+    } else {
+        a.className = a.className.replace(" show", "");
+    }
+}
+</script>
+</div>
+
+<!-- About -->
+<div class="container padding-64 background-wine">
+  <div class="content">
+    <p class="cursive-large center text-silver">Sarah & Kenneth<br><img src="./WebsitePictures/Outline.png" class="center" style="max-height: 4em"></p>
+    <p style= "font-size: 4em" class= "cursive-countdown center text-silver" id="countdown">We're married! Thank you to everyone who helped us celebrate!!!</p>
+  </div>
+</div>
+
+<!-- Background photo wedding details -->
+<div class="display-container bgimg4">
+  <div class="display-middle text-white center">
+    <h1 class="header-title-short">Wedding Details</h1><br>
+  </div>
+</div>
+  
+<!-- Wedding Details Text -->
+<div class="container padding-64 background-wine" id="details">
+  <div class="content">
+    <h1 class="cursive-large text-silver">Saturday, September 08, 2018</h1>
+    <p class="cursive-medium text-silver">Ceremony</p>
+    <p style="text-align:center;font-size:2em" class="text-silver">1:00 PM - St. Mary of the Mount<br>Please be aware, the church is not air conditioned</p>
+   <div class="containerpic">
+      <a href="https://www.google.com/maps/dir/40.424599,-79.9280928/St.+Mary+of+the+Mount+Church,+403+Grandview+Ave,+Pittsburgh,+PA+15211/@40.4307985,-79.9871917,14z/data=!3m1!4b1!4m17!1m6!3m5!1s0x8834f6b2633ef04f:0xde9ab5173ba3f0e2!2sSt.+Mary+of+the+Mount+Church!8m2!3d40.4344876!4d-80.0118298!4m9!1m1!4e1!1m5!1m1!1s0x8834f6b2633ef04f:0xde9ab5173ba3f0e2!2m2!1d-80.0118298!2d40.4344876!3e0" target=_"blank"><img src="./WebsitePictures/stmary.png" alt="StMary" class="imagepic" style="width:75%">
+        <div class="middlepic">
+          <div class="textpic">St. Mary of the Mount<br>403 Grandview Ave<br>Pittsburgh, PA 15211<br><br><i>-Click for Directions-</i></div>
+        </div>
+      </a></div>
+      <br><p class="cursive-medium text-silver">Reception</p>
+      <p style="text-align:center;font-size:2em" class="text-silver">5:00 PM - Sheraton Pittsburgh Hotel at Station Square</p>
+   <div class="containerpic">
+      <a href="https://www.google.com/maps/dir/40.4245669,-79.9281406/Sheraton+Pittsburgh+Hotel+at+Station+Square,+300+W+Station+Square+Dr,+Pittsburgh,+PA+15219/@40.4333552,-80.0426963,12z/data=!3m1!4b1!4m17!1m6!3m5!1s0x8834f14eecf088e5:0x64083ce849c951a6!2sSheraton+Pittsburgh+Hotel+at+Station+Square!8m2!3d40.4349581!4d-80.0063829!4m9!1m1!4e1!1m5!1m1!1s0x8834f14eecf088e5:0x64083ce849c951a6!2m2!1d-80.0063829!2d40.4349581!3e0" target=_"blank"><img src="./WebsitePictures/Sheraton.jpg" alt="Sheraton" class="imagepic" style="width:75%;">
+        <div class="middlepic">
+          <div class="textpic">Sheraton at Station Square<br>300 W Station Square Dr.<br>Pittsburgh, PA 15219<br><br><i>-Click for Directions-</i></div>
+        </div>
+      </a></div>
+    </div>
+  </div>
+ </div>
+
+  
+<!-- Background photo other events -->
+<div class="display-container bgimg5">
+  <div class="display-middle text-white center">
+    <h1 class="header-title-short">Other Events</h1><br>
+  </div>
+</div>
+
+<!-- Other Events -->
+<div class="container padding-64 background-wine" id="other">
+  <div class="content">
+    <h1 class="cursive-large text-silver">Friday Night Gathering</h1>
+    <p style="text-align:center;font-size:3em" class="text-silver">Friday, September 7, 2018<br>8:00 PM<br>Bigham Tavern<br>321 Bigham St, Pittsburgh, PA 15211</p>
+    <img class="background-wine" src="./ThingsPictures/Bigham.png" style="width: 100%">
+    <p style="text-align:center;font-size:1.5em" class="text-silver">We will be heading to Bigham to visit with our guests the night before. We hope to see you there!</p>
+    <br><br>
+    <h1 class="cursive-large text-silver">Sunday Morning Brunch</h1>
+    <p style="text-align:center;font-size:3em" class="text-silver">Sunday, September 9, 2018<br>9:30 AM<br>Trackside Restaurant<br>Sheraton at Station Square Lobby</p>
+    <img class="background-wine" src="./ThingsPictures/brunch.png" style="width: 100%">
+    <p style="text-align:center;font-size:1.5em" class="text-silver">If you are able to make it, please join the Bride and Groom at brunch in the hotel lobby. We would love the opportunity to continue to visit with our guests.</p>
+  </div>
+</div>
+
+<!-- Background photo Accomodations -->
+<div class="display-container bgimg6">
+  <div class="display-middle text-white center">
+    <h1 class="header-title-short">Accommodations</h1><br>
+  </div>
+</div>
+
+<!-- Accomodations -->
+
+ <div class="container padding-64 background-wine" id="Accommodations">
+  <div class="content">
+      <p class="center xlarge text-silver">We have reserved a block of rooms at the Sheraton at Station Square and the Holiday Inn Express South Side. To take advantage of the discount, call the numbers listed below or click the picture for hotel information!</p>
+    <div class="row">
+      <div class="half">
+        <p style="text-align:center;font-size:1.5em" class="text-silver"><b>SHERATON AT STATION SQUARE</b></p><p style="text-align:center;font-size:1em" class="text-silver">Mention the "Robb-Riordan Wedding" ((412) 261-2000)<br>Room Rate: $199/Night<br>or click the picture for hotel details (no online reservation)</p><a href="http://www.sheratonpittsburghstationsquare.com/" target=_"blank"><img src="./WebsitePictures/SheratonLogo.png" alt="SheratonLogo" class="logopic" style="width:50%;"></a>
+      </div>
+      <div class="half">
+        <p style="text-align:center;font-size:1.5em" class="text-silver"><b>HOLIDAY INN EXPRESS, SOUTH SIDE</b></p><p style="text-align:center;font-size:1em" class="text-silver">Mention the "Robb-Riordan Wedding" ((412) 488-1130)<br>Room Rate: $159/Night<br>or click the picture for online reservation and hotel details</p><a href="https://www.hiexpress.com/hotels/us/en/reservation/book?qAdlt=1&qBrs=6c.hi.ex.rs.ic.cp.in.sb.cw.cv.ul.vn.ki.sp.nd.ct&qChld=0&qCiD=08&qCiMy=082018&qCoD=09&qCoMy=082018&qDest=20+South+Tenth+Street+Pittsburgh+Pennsylvania+United+States&qFRA=1&qGRM=0&qGrpCd=RRW&qHtlC=pitxs&qPSt=0&qRRSrt=rt&qRef=df&qRms=1&qRpn=1&qRpp=20&qRtP=6CBARC&qSHp=1&qSlH=pitxs&qSmP=3&qSrt=sBR&qWch=0&srb_u=1&method=redirect&icdv=99801505&icdv=99801505#roomratestitle" target=_"blank"><img src="./WebsitePictures/HolidayInnLogo.png" alt="HolidayInnLogo" class="logopic" style="width:50%;"></a>
+      </div>
+    </div>
+  </div>  
+</div>
+  
+<!-- Footer -->
+<footer class="center white padding-16">
+  <p>Website by Ken Riordan</p>
+  <p>Photography Courtesy of:<br><img src="./WebsitePictures/ThereYouAre.png" style="max-height:10em; max-width:10em"><br>"There You Are, LLC" (Vanya and Nicole) & Monica Frydach</p>
+  <p class="text-white center">Kenneth Riordan Sarah Robb Wedding</p>
+</footer>
+<div class="hide-small" style="margin-bottom:32px"> </div>
+
+</body>
+</html>
